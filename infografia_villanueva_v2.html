@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía Fideicomiso BL COMCENTERS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Fondo azul oscuro para el cuerpo */
+            background-color: #0F172A; /* slate-950 */
+        }
+        .section-box {
+            /* Fondo oscuro para las tarjetas */
+            background-color: #1E293B; /* slate-800 */
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 15px -5px rgba(0, 0, 0, 0.4);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        /* Colores para la gráfica circular (harmonizados con la paleta) */
+        .fill-kiva { fill: #06B6D4; /* Cian */ }
+        .fill-alejandro { fill: #8B5CF6; /* Púrpura */ }
+        .fill-eduardo { fill: #EC4899; /* Fucsia */ }
+        .fill-inventia { fill: #84CC16; /* Lima */ }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- Contenedor principal: Azul oscuro ligeramente más claro que el cuerpo -->
+    <div class="max-w-7xl mx-auto bg-slate-900 rounded-xl overflow-hidden shadow-2xl">
+        
+        <!-- HEADER: Accent CIAN -->
+        <header class="bg-cyan-600 p-6 text-white text-center rounded-t-xl">
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                ESTRUCTURA DEL FIDEICOMISO 8510 2874
+            </h1>
+            <p class="mt-2 text-lg font-light opacity-90">Análisis del Primer Convenio Modificatorio - BL COMCENTERS, Juriquilla</p>
+        </header>
+
+        <!-- MAIN INFOGRAPHIC CONTENT -->
+        <div class="p-6 sm:p-10 space-y-10">
+
+            <!-- 1. DERECHOS Y PARTICIPACIÓN GENERAL - Accent PÚRPURA -->
+            <div class="section-box border-t-4 border-purple-500">
+                <h2 class="text-2xl font-extrabold text-purple-400 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18H4a2 2 0 00-2 2h16a2 2 0 00-2-2z"></path></svg>
+                    <span class="text-white">1. DISTRIBUCIÓN DE DERECHOS FIDEICOMISARIOS</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center mt-5">
+                    <div class="p-4 bg-slate-700 rounded-lg shadow">
+                        <p class="text-base font-bold text-gray-200">KIVA PROYECTOS</p>
+                        <p class="text-3xl font-extrabold text-cyan-400 mt-1">75.32%</p>
+                    </div>
+                    <div class="p-4 bg-purple-900 rounded-lg shadow border-2 border-purple-500">
+                        <p class="text-base font-bold text-gray-100">ALEJANDRO VILLANUEVA</p>
+                        <p class="text-3xl font-extrabold text-purple-400 mt-1">12.72%</p>
+                    </div>
+                    <div class="p-4 bg-purple-900 rounded-lg shadow border-2 border-purple-500">
+                        <p class="text-base font-bold text-gray-100">EDUARDO VILLANUEVA</p>
+                        <p class="text-3xl font-extrabold text-purple-400 mt-1">9.98%</p>
+                    </div>
+                    <div class="p-4 bg-slate-700 rounded-lg shadow">
+                        <p class="text-base font-bold text-gray-200">INVENTIA / DISYGA</p>
+                        <p class="text-3xl font-extrabold text-cyan-400 mt-1">1.98%</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 p-4 bg-slate-700 rounded-lg border-l-4 border-purple-500">
+                    <h3 class="font-bold text-lg text-purple-400">Titularidad por Área (Concentración de Derechos)</h3>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Los hermanos Villanueva concentran su participación como Fideicomisarios E en el "Área de Bodegas" (54.24% del total del proyecto):
+                    </p>
+                    
+                    <!-- INICIO: GRÁFICA CIRCULAR ÁREA DE BODEGAS -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        <!-- Pie Chart Container (SVG) -->
+                        <div class="flex justify-center items-center p-4">
+                            <svg viewBox="0 0 100 100" class="w-full h-48 sm:h-64">
+                                <!-- KIVA 54.50% (Cyan) - Start 0° to End 196.2° -->
+                                <path d="M 50 50 L 50 0 A 50 50 0 1 1 36.3 98.0 Z" class="fill-kiva"></path>
+                                <!-- ALEJANDRO V. 23.45% (Purple) - Start 196.2° to End 280.62° -->
+                                <path d="M 50 50 L 36.3 98.0 A 50 50 0 0 1 0.8 59.5 Z" class="fill-alejandro"></path>
+                                <!-- EDUARDO V. 18.40% (Fuchsia) - Start 280.62° to End 346.86° -->
+                                <path d="M 50 50 L 0.8 59.5 A 50 50 0 0 1 39.0 1.3 Z" class="fill-eduardo"></path>
+                                <!-- INVENTIA 3.65% (Lime) - Start 346.86° to End 360° -->
+                                <path d="M 50 50 L 39.0 1.3 A 50 50 0 0 1 50 0 Z" class="fill-inventia"></path>
+                            </svg>
+                        </div>
+                        
+                        <!-- Legend -->
+                        <div class="p-4 rounded-lg self-center">
+                            <h3 class="font-bold text-lg text-white mb-3">Distribución Específica</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center text-gray-300"><span class="w-3 h-3 rounded-full mr-2 bg-cyan-500"></span> KIVA PROYECTOS: <span class="ml-auto font-semibold text-cyan-400">54.50%</span></li>
+                                <li class="flex items-center text-gray-300"><span class="w-3 h-3 rounded-full mr-2 bg-purple-500"></span> ALEJANDRO VILLANUEVA: <span class="ml-auto font-semibold text-purple-400">23.45%</span></li>
+                                <li class="flex items-center text-gray-300"><span class="w-3 h-3 rounded-full mr-2 bg-fuchsia-500"></span> EDUARDO VILLANUEVA: <span class="ml-auto font-semibold text-fuchsia-400">18.40%</span></li>
+                                <li class="flex items-center text-gray-300"><span class="w-3 h-3 rounded-full mr-2 bg-lime-500"></span> INVENTIA CAPITAL: <span class="ml-auto font-semibold text-lime-400">3.65%</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- FIN: GRÁFICA CIRCULAR ÁREA DE BODEGAS -->
+                </div>
+            </div>
+
+            <!-- 2. GESTIÓN Y OPERACIÓN (Fuera del Fideicomiso) - Accent VERDE LIMA -->
+            <div class="section-box border-t-4 border-lime-500">
+                <h2 class="text-2xl font-extrabold text-lime-400 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path></svg>
+                    <span class="text-white">2. GESTIÓN Y OPERACIÓN (Fuera del Fideicomiso)</span>
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Fiduciario BIM (MORADO) -->
+                    <div class="p-4 bg-violet-900 rounded-lg border border-violet-500">
+                        <h3 class="text-lg font-bold text-violet-400">FIDUCIARIO (BIM)</h3>
+                        <p class="text-sm font-semibold mt-1 text-gray-100">ROL PASIVO</p>
+                        <p class="text-xs text-gray-300 mt-1">Solo ostenta la propiedad y formaliza actos bajo instrucción del Comité. No tiene responsabilidad sobre el desarrollo o éxito comercial.</p>
+                    </div>
+
+                    <!-- Desarrolladores (Lime) -->
+                    <div class="p-4 bg-lime-900 rounded-lg border border-lime-500">
+                        <h3 class="text-lg font-bold text-lime-400">DESARROLLADORES</h3>
+                        <p class="text-sm font-semibold mt-1 text-gray-100">KIVA / INVENTIA</p>
+                        <p class="text-xs text-gray-300 mt-1">Responsables de la construcción, licencias, comercialización y asumen el 100% del riesgo del proyecto.</p>
+                    </div>
+
+                    <!-- Administradores (Cyan) -->
+                    <div class="p-4 bg-cyan-900 rounded-lg border border-cyan-500">
+                        <h3 class="text-lg font-bold text-cyan-400">ADMINISTRADORES</h3>
+                        <p class="text-sm font-semibold mt-1 text-gray-100">KIVA Adm. / INVENTIA</p>
+                        <p class="text-xs text-gray-300 mt-1">Gestionan rentas, cubren gastos y distribuyen el remanente. Toda la gestión financiera se realiza "FUERA" del Fideicomiso (4% de comisión).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. GOBERNANZA Y TOMA DE DECISIONES - Accent CIAN -->
+            <div class="section-box border-t-4 border-cyan-500">
+                <h2 class="text-2xl font-extrabold text-cyan-400 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+                    <span class="text-white">3. GOBERNANZA Y TOMA DE DECISIONES</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Comité Técnico -->
+                    <div class="p-5 bg-slate-700 rounded-lg shadow-inner border border-cyan-400">
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">Comité Técnico (Operativo)</h3>
+                        <ul class="list-disc pl-5 text-sm text-gray-300 space-y-1">
+                            <li>"Función": Toma de decisiones operativas e instrucciones al Fiduciario.</li>
+                            <li>"Votación": <span class="font-bold text-cyan-200">Mayoría Simple</span>.</li>
+                            <li>"Activación": Funciona <span class="font-bold text-cyan-200">Desde el inicio</span>.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Sesión General -->
+                    <div class="p-5 bg-slate-600 rounded-lg shadow-inner border border-cyan-400">
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">Sesión General de Fideicomisarios (Supremo/Estratégico)</h3>
+                        <ul class="list-disc pl-5 text-sm text-gray-300 space-y-1">
+                            <li>"Función": Remover administrador, aprobar modificaciones.</li>
+                            <li>"Votación": <span class="font-bold text-cyan-200">Mayoría Calificada (65%)</span> de los derechos.</li>
+                            <li>"Activación": Entra en funciones al <span class="font-bold text-cyan-200">100% de conclusión</span> de las obras.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. REGLAS DE CESIÓN DE DERECHOS - Accent MORADO/FUCSIA -->
+            <div class="section-box border-t-4 border-fuchsia-500">
+                <h2 class="text-2xl font-extrabold text-fuchsia-400 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path></svg>
+                    <span class="text-white">4. REGLAS DE CESIÓN Y PROTECCIÓN DE DERECHOS</span>
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    
+                    <div class="p-3 bg-fuchsia-900 rounded-lg border-b-2 border-fuchsia-400">
+                        <p class="text-lg font-bold text-gray-100">Derecho de Preferencia</p>
+                        <p class="text-xs text-gray-300">Vender a co-beneficiarios antes que a terceros.</p>
+                    </div>
+                    
+                    <div class="p-3 bg-fuchsia-900 rounded-lg border-b-2 border-fuchsia-400">
+                        <p class="text-lg font-bold text-gray-100">Tag Along (Venta Conjunta)</p>
+                        <p class="text-xs text-gray-300">Minorías (incluidos Villanueva) pueden unirse a una venta del <span class="font-bold">80% o más</span>.</p>
+                    </div>
+                    
+                    <div class="p-3 bg-fuchsia-900 rounded-lg border-b-2 border-fuchsia-400">
+                        <p class="text-lg font-bold text-gray-100">Drag Along (Derecho de Arrastre)</p>
+                        <p class="text-xs text-gray-300">Mayorías (80%) pueden forzar la venta del <span class="font-bold">100%</span> del proyecto.</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-sm text-red-400 font-semibold border-l-4 pl-3 border-red-500">
+                    "Prohibición de Pignoración": Los derechos fideicomisarios "no pueden ser gravados" ni utilizados como garantía, salvo en los términos explícitos del fideicomiso.
+                </p>
+            </div>
+            
+            <!-- 5. ROL Y MECANISMOS DE PROTECCIÓN (Fideicomisarios E) - NUEVO APARTADO -->
+            <div class="section-box border-t-4 border-teal-500">
+                <h2 class="text-2xl font-extrabold text-teal-400 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-white">5. ROL Y MECANISMOS DE PROTECCIÓN (Fideicomisarios E)</span>
+                </h2>
+                <p class="mb-4 text-sm text-gray-300">
+                    El rol de Alejandro Villanueva y Eduardo Villanueva dentro del Fideicomiso es el de **Fideicomisarios "E"**. Formalizan el Primer Convenio Modificatorio como partes comparecientes. Declararon ser mayores de edad, solteros y haber solicitado **asesoría legal y fiscal externa** al Fiduciario.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Mecanismos de Retribución -->
+                    <div class="p-4 bg-teal-900 rounded-lg border border-teal-500 md:col-span-2">
+                        <h3 class="text-lg font-bold text-teal-400 mb-2">Retribución y Control de la Inversión</h3>
+                        <ul class="list-disc pl-5 text-sm text-gray-300 space-y-1">
+                            <li>"Inversión": Está centrada en el **RIESGO PROYECTO** (pérdida o utilidad por comercialización/terminación).</li>
+                            <li>"Distribución de Frutos": Reciben los ingresos (Remanente del Monto Distribuible) por arrendamiento del **ÁREA DE BODEGAS** (y Área Comercial, en función de su porcentaje).</li>
+                            <li>"Dispersión de Recursos": Entregada directamente por el **ADMINISTRADOR DE CADA ÁREA** (Inventia Capital, en su caso) a más tardar los días 25 de cada mes. La Fiduciaria **no interviene ni es responsable**.</li>
+                            <li>"Informes Financieros": El Administrador debe presentar <span class="font-bold text-teal-200">informes mensuales</span> con documentación de soporte a los Fideicomisarios E.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Analogía -->
+                    <div class="p-4 bg-slate-700 rounded-lg border-l-4 border-teal-500 md:col-span-1">
+                        <h3 class="text-lg font-bold text-teal-400 mb-2">Analogía de la Inversión</h3>
+                        <p class="text-sm text-gray-300">
+                            Su rol es similar al de **accionistas minoritarios** en un proyecto de capital de riesgo inmobiliario. La protección radica en:
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-gray-300 mt-2">
+                            <li>Participación proporcional en las ganancias (rentas).</li>
+                            <li>Derechos de gobernanza y protección contractual (Tag Along/Drag Along).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-teal-900 rounded-lg border border-teal-500">
+                    <h3 class="text-lg font-bold text-teal-400 mb-2">Gobernanza y Voto</h3>
+                    <ul class="list-disc pl-5 text-sm text-gray-300 space-y-1">
+                        <li>"Comité Técnico": Tienen derecho a nombrar un miembro por cada <span class="font-bold text-teal-200">8.00%</span> de participación. Su participación conjunta (22.7%) les permite designar a **dos (2) miembros**.</li>
+                        <li>"Sesión General": Integran el órgano supremo, que entra en funciones al 100% de la conclusión de las obras para discutir y aprobar resoluciones clave.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- DISCLAIMER FOOTER -->
+        <footer class="p-5 bg-slate-950 text-white rounded-b-xl text-center">
+            <h3 class="text-xl font-extrabold mb-1 text-red-400">DISCLAIMER IMPORTANTE:</h3>
+            <p class="text-sm">
+                "Este proyecto es un fideicomiso en proceso". La presente infografía es un resumen ejecutivo. Se debe "revisar la versión final del archivo" y todos los documentos legales para una comprensión total y vinculante.
+            </p>
+            <p class="mt-2 text-xs opacity-70">
+                Copyright © Maximiliano Arechiga Morales
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
